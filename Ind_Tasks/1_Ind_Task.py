@@ -7,7 +7,7 @@ def typer(types="even"):
         values = [int(arg) for arg in args]
         i = 0
 
-        # Удаление четных.
+        # Удаление четных элементов по значению.
         if types == 'even':
             for j in values[:]:
                 print(j)
@@ -17,7 +17,7 @@ def typer(types="even"):
                 else:
                     i += 1
 
-        # Удаление нечетных.
+        # Удаление нечетных элементов по значению.
         else:
             for j in values[:]:
                 print(j)
@@ -33,4 +33,4 @@ def typer(types="even"):
 
 
 if __name__ == '__main__':
-    print(*typer("deven")(2, 9, 7, 8, 4, 2, 15))
+    print(*typer("even")(2, 9, 4, 7, 8, 4, 2, 15))
