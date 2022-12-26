@@ -10,9 +10,7 @@ def typer(types="even"):
         # Удаление четных элементов по значению.
         if types == 'even':
             for j in values[:]:
-                print(j)
                 if j % 2 == 0:
-                    print('deleting chet', i)
                     del values[i]
                 else:
                     i += 1
@@ -20,9 +18,7 @@ def typer(types="even"):
         # Удаление нечетных элементов по значению.
         else:
             for j in values[:]:
-                print(j)
                 if j % 2 != 0:
-                    print('deleting chet', i)
                     del values[i]
                 else:
                     i += 1
